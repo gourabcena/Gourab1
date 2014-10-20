@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html> 
+<body>
+<title> Form page</title>
+<style>
+h1{background-color:yellow}
+div{width:80%;
+height:700px;
+background-color:green;
+margin:auto;
+text-align:30px;
+}
+</style>
+<form action="submit.php" method="post">
+<center>
+<h1> Please kindly enter your basic information</h1>
+</center>
+<div>
+<br></br>
+&nbsp;Name*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required><br><br>
+&nbsp;E-mail*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" required><br><br>
+&nbsp;Password*:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pw1" onchange="form.pw2.pattern=this.value;" required><br></br>
+&nbsp;Confirm Password*:&nbsp;<input type="password" name="pw2" required><br></br>
+&nbsp;City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<select name="city">
+<option value="kolkata"> Kolkata </option>
+<option value="mumbai"> Mumbai </option>
+<option value="delhi"> Delhi </option>
+<option value="chennai">Chennai </option>
+</select><br><br>
+&nbsp;SEX:	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MALE<input type="radio" name="sex" value="male"><span>
+FEMALE <input type="radio" name="sex" value="female"></span><br/><br>
+&nbsp;Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="no"><br><br>
+&nbsp;Hobby:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="hobby"><br><br>
+&nbsp;College:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="college"><br><br>
+<center>
+<input type="submit">
+</center>
+</div>
+</form>
+</body>
+</html>
